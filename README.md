@@ -1,90 +1,66 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Simple Multipage Website (No Frameworks)
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+A clean, responsive three-page website (Home, About, Contact) built using only HTML5, CSS3, and vanilla JavaScript. Includes a lightweight image slider, mobile navigation toggle, and client-side form validation.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+## Structure
 
----
+- `index.html`: Home with hero and image slider
+- `about.html`: Goals and approach
+- `contact.html`: Contact form with validation + success message
+- `css/styles.css`: Styles, responsive layout, and components
+- `js/main.js`: Mobile nav, slider, and form logic
+- `assets/images/slide{1..3}.svg`: Placeholder images for the slider
+- `.nojekyll`: Ensures GitHub Pages serves files as-is
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+## Local Preview
 
-Before you write any code, take time to plan:
+Open `index.html` directly in a browser, or serve with a local HTTP server:
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+- Python: `python -m http.server 8080`
+- Node: `npx serve .` (if you have `serve` installed)
 
-**Goal:** Show intentional structure and user journey across the site.
+Then visit `http://localhost:8080`.
 
----
+## Deployment
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+You can deploy this site on GitHub Pages, Netlify, or Vercel in minutes.
 
-Using your plan, begin building:
+### Option A: GitHub Pages
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+1. Create a new GitHub repository and push this folder’s contents.
+2. Add `.nojekyll` at the project root (already included).
+3. On GitHub, go to Settings → Pages → Deploy from branch → `main` and `/ (root)`.
+4. Save. Your site will be available at `https://<username>.github.io/<repo>/`.
 
-Each page should:
+Tip: If the site uses relative paths (it does), it works under project subpaths.
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+### Option B: Netlify
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+1. Create a new site from Git in Netlify and pick your repository.
+2. Build command: none
+3. Publish directory: `/` (root)
+4. Deploy. Netlify will give you a live URL you can rename.
 
----
+### Option C: Vercel
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+1. Import the repo into Vercel.
+2. Framework preset: Other (no build step)
+3. Output directory: `/` (root)
+4. Deploy to get your live URL.
 
-Before deployment, refactor your project to follow production-friendly practices:
+## Customization
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+- Update colors in `css/styles.css` under `:root`.
+- Replace `assets/images/*.svg` with your own images.
+- Edit the slider captions in `index.html`.
+- Adjust form validation rules in `js/main.js`.
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+## Accessibility
 
----
+- Landmarks and labels for header, nav, and slider.
+- Keyboard support for the image slider (Left/Right arrows).
+- Visible focus styles and ARIA live regions for form feedback.
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## License
 
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+For educational use. Replace or remove this section per your needs.

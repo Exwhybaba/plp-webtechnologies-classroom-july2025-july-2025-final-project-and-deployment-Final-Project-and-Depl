@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400' width='1200' height='400'>
+  <defs>
+    <linearGradient id='g2' x1='1' y1='0' x2='0' y2='1'>
+      <stop offset='0' stop-color='#a78bfa'/>
+      <stop offset='1' stop-color='#6366f1'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='400' fill='url(#g2)'/>
+  <rect x='850' y='-40' width='400' height='400' fill='rgba(255,255,255,0.12)' transform='rotate(20 850 0)'/>
+  <text x='60' y='240' font-size='80' font-family='Segoe UI, Roboto, Arial' fill='white' opacity='0.92'>Slide 2</text>
+</svg>
+

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home — Animal Nutrition</title>
+    <meta name="description" content="A simple guide to animal nutrition: balanced diets, life‑stage needs, and safe feeding practices." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Animal Nutrition</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <h1>Animal Nutrition Basics</h1>
+          <p>Simple tips to feed pets and livestock well, every day.</p>
+          <a href="about.html" class="btn btn--primary">Learn the basics</a>
+        </div>
+      </section>
+
+      <section class="slider" aria-label="Image Slider">
+        <div class="container">
+          <div class="slider__viewport" role="region" aria-roledescription="carousel" aria-label="Featured images">
+            <div class="slide is-active" data-index="0">
+              <img src="https://source.unsplash.com/1200x400/?pet,food" alt="Pet food bowl with balanced meal" loading="lazy" />
+              <div class="slide__caption">Balanced diets support healthy growth.</div>
+            </div>
+            <div class="slide" data-index="1">
+              <img src="https://source.unsplash.com/1200x400/?water,bowl,pet" alt="Fresh water bowl for pets" loading="lazy" />
+              <div class="slide__caption">Fresh, clean water every day.</div>
+            </div>
+            <div class="slide" data-index="2">
+              <img src="https://source.unsplash.com/1200x400/?livestock,feeding" alt="Feeding routine for livestock" loading="lazy" />
+              <div class="slide__caption">Portion control and a regular routine.</div>
+            </div>
+            <button class="slider__control slider__control--prev" aria-label="Previous slide">&#10094;</button>
+            <button class="slider__control slider__control--next" aria-label="Next slide">&#10095;</button>
+            <div class="slider__dots" role="tablist" aria-label="Slide indicators"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container grid-3">
+          <article class="card">
+            <h3>Balanced Diets</h3>
+            <p>Combine proteins, carbohydrates, fats, fiber, vitamins, and minerals in the right proportions for each species.</p>
+          </article>
+          <article class="card">
+            <h3>Life‑Stage Needs</h3>
+            <p>Puppies, kittens, adults, and seniors have different energy and nutrient requirements.</p>
+          </article>
+          <article class="card">
+            <h3>Safe Feeding</h3>
+            <p>Avoid toxic foods, manage treats, and introduce new diets gradually to prevent stomach upsets.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> SimpleSite. All rights reserved.</p>
+        <p>
+          <a href="about.html">About</a> ·
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Animal Nutrition</title>
+    <meta name="description" content="Contact us with questions about animal nutrition and safe feeding practices." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Animal Nutrition</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Questions about feeding? Send a message and we’ll share helpful resources. For urgent issues, please contact a vet.</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <form id="contact-form" class="form card" novalidate>
+            <div class="form__row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required minlength="2" placeholder="Jane Doe" />
+              <small class="error" id="name-error" aria-live="polite"></small>
+            </div>
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com" />
+              <small class="error" id="email-error" aria-live="polite"></small>
+            </div>
+            <div class="form__row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Hello" />
+            </div>
+            <div class="form__row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required minlength="10" rows="6" placeholder="Your message..."></textarea>
+              <small class="error" id="message-error" aria-live="polite"></small>
+            </div>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary">Send Message</button>
+            </div>
+            <p class="form__success" id="form-success" role="status" hidden>Thanks! Your message was saved locally. We’ll get back with general guidance (not medical advice).</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> SimpleSite. All rights reserved.</p>
+        <p>
+          <a href="about.html">About</a> ·
+          <a href="contact.html" aria-current="page">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+  </html>
